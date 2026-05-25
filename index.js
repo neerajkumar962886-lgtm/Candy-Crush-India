@@ -17,7 +17,7 @@ app.post(`/bot${process.env.BOT_TOKEN}`, (req, res) => {
 
 bot.sendMessage(
   msg.chat.id,
-  `Welcome <tg-emoji emoji-id="5323791158017548491">🌹</tg-emoji> Premium User`,
+  `Welcome <tg-emoji emoji-id="5323791158017548491"></tg-emoji> Premium User`,
   { parse_mode: "HTML" }
 );
 
