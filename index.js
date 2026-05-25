@@ -15,12 +15,10 @@ app.post(`/bot${process.env.BOT_TOKEN}`, (req, res) => {
   res.sendStatus(200);
 });
 
-bot.on("message", (msg) => {
-  bot.sendMessage(
-    msg.chat.id,
-    `✨ Welcome <tg-emoji emoji-id="5454182071383174500"></tg-emoji>\n💎 Premium User 🚀`,
-    { parse_mode: "HTML" }
-  );
-});
+bot.sendMessage(
+  msg.chat.id,
+  `Welcome <tg-emoji emoji-id="5323791158017548491">🌹</tg-emoji> Premium User`,
+  { parse_mode: "HTML" }
+);
 
 app.listen(process.env.PORT || 3000);
